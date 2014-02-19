@@ -18,5 +18,11 @@ describe('dirhash', function() {
 		var expected = hash.update("wow\n").digest('hex');
 		assert.equal(dirhash('./test/fixtures/subfolder/much/very'), expected);
 	});
+
+	it('should generate a hash with a different hashing algorithm', function() {
+		hash = createHash('sha1');
+		var expected = hash.update("very hash\nwow\n").digest('hex');
+		assert.equal(dirhash('./test/fixtures', 'sha1'), expected);
+	});
 });
 
