@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/_mocha -R spec test/*.js --recursive"
   },
   "repository": "",
   "keywords": [
@@ -15,5 +15,8 @@
   ],
   "author": "Richard Ramsden",
   "license": "MIT",
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "mocha": "~1.17.1"
+  }
 }

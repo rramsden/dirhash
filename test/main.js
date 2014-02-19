@@ -1,0 +1,22 @@
+var assert = require('assert'),
+	dirhash = require('..'),
+	createHash = require('crypto').createHash;
+
+describe('dirhash', function() {
+	var hash, expected;
+
+	beforeEach(function() {
+		hash = createHash('md5');
+	});
+
+	it('should recursive through directories and compute hash', function() {
+		var expected = hash.update("very hash\nwow\n").digest('hex');
+		assert.equal(dirhash('./test/fixtures'), expected);
+	});
+
+	it('should hash a single file in a directory', function() {
+		var expected = hash.update("wow\n").digest('hex');
+		assert.equal(dirhash('./test/fixtures/subfolder/much/very'), expected);
+	});
+});
+
