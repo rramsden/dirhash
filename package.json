@@ -1,0 +1,19 @@
+{
+  "name": "dirhash",
+  "version": "0.1.0",
+  "description": "Hash the content of a directory given a hashing algorithm",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "hash"
+  ],
+  "author": "Richard Ramsden",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
