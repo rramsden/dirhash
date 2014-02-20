@@ -1,6 +1,6 @@
 {
   "name": "dirhash",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hash the content of a directory given a hashing algorithm",
   "main": "index.js",
   "directories": {
