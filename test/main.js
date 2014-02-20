@@ -9,7 +9,7 @@ describe('dirhash', function() {
 		hash = createHash('md5');
 	});
 
-	it('should recursive through directories and compute hash', function() {
+	it('should recursve through directories and compute hash', function() {
 		var expected = hash.update("very hash\nwow\n").digest('hex');
 		assert.equal(dirhash('./test/fixtures'), expected);
 	});
