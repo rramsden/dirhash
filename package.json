@@ -16,7 +16,7 @@
   "author": "Richard Ramsden",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "dependencies": {
+  "devDependencies": {
     "mocha": "~1.17.1"
   }
 }
